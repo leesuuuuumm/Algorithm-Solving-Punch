@@ -3,7 +3,7 @@ package com.ssafy;
 import java.util.Scanner;
 
 public class Solution_2798_블랙잭{
-
+ 
 	static int arr[], num[], N, M, min = Integer.MAX_VALUE;
 
 	public static void main(String[] args) {
