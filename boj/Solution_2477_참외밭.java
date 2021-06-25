@@ -2,7 +2,7 @@ package ssafyAlgo;
 
 import java.util.Scanner;
 
-public class Solution_boj_2477_참외밭 {
+public class Solution_2477_참외밭{
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);

@@ -2,7 +2,7 @@ package com.ssafy;
 
 import java.util.Scanner;
 
-public class Solution_boj_1316_그룹단어체커 {
+public class Solution_1316_그룹단어체커 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Solution_1697_¼û¹Ù²ÀÁú {
+public class Solution_1697_ìˆ¨ë°”ê¼­ì§ˆ {
 
 	static int N,K;
 	static boolean v[];

@@ -2,7 +2,7 @@ package com.ssafy;
 
 import java.util.Scanner;
 
-public class Solution_boj_2798_블랙잭 {
+public class Solution_2798_블랙잭{
 
 	static int arr[], num[], N, M, min = Integer.MAX_VALUE;
 

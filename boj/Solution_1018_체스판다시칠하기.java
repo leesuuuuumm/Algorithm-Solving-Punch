@@ -2,7 +2,7 @@ package net.acmicpc;
 
 import java.util.Scanner;
 
-public class Solution_1018_Ã¼½ºÆÇ´Ù½ÃÄ¥ÇÏ±â {
+public class Solution_1018_ì²´ìŠ¤íŒë‹¤ì‹œì¹ í•˜ê¸° {
 
 	static int R, C, wCnt, bCnt;
 	static char map[][];
@@ -33,8 +33,8 @@ public class Solution_1018_Ã¼½ºÆÇ´Ù½ÃÄ¥ÇÏ±â {
 		int result = 64;
 		for (int kr = 0; kr <= R - 8; kr++) {
 			for (int kc = 0; kc <= C - 8; kc++) {
-				wCnt=0; // wÃ¼½ºÆÇÀÏ ¶§ mapÀÌ¶û chess1 ºÒÀÏÄ¡ÇÏ´Â Å¸ÀÏÀÇ °³¼ö 
-				bCnt=0; // bÃ¼½ºÆÇÀÏ ¶§ mapÀÌ¶û chess2 ºÒÀÏÄ¡ÇÏ´Â Å¸ÀÏÀÇ °³¼ö 
+				wCnt=0; // wì²´ìŠ¤íŒì¼ ë•Œ mapì´ë‘ chess1 ë¶ˆì¼ì¹˜í•˜ëŠ” íƒ€ì¼ì˜ ê°œìˆ˜ 
+				bCnt=0; // bì²´ìŠ¤íŒì¼ ë•Œ mapì´ë‘ chess2 ë¶ˆì¼ì¹˜í•˜ëŠ” íƒ€ì¼ì˜ ê°œìˆ˜ 
 				for (int r = kr; r < kr + 8; r++) {
 					for (int c = kc; c < kc + 8; c++) {
 						if (map[r][c] != chess1[r - kr][c - kc]) {

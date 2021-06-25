@@ -2,7 +2,7 @@ package net.acmicpc;
 
 import java.util.Scanner;
 
-public class Solution_1436_¿µÈ­°¨µ¶¼ò {
+public class Solution_1436_ì˜í™”ê°ë…ìˆŒ {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner (System.in);

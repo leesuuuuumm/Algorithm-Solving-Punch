@@ -2,7 +2,7 @@ package com.ssafy;
 
 import java.util.Scanner;
 
-public class Solution_boj_10809_알파벳찾기 {
+public class Solution_10809_알파벳찾기 {
 
 	public static void main(String[] args) {
 	

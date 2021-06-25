@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Solution_7569_Åä¸¶Åä {
+public class Solution_7569_í† ë§ˆí†  {
 	static int R, C, H, Map[][][];
 	static int dh[] = { 0, 0, 0, 0, -1, 1 };
 	static int dr[] = { 0, 1, -1, 0, 0, 0 };

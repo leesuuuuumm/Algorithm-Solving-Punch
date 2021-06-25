@@ -2,7 +2,7 @@ package net.acmicpc;
 
 import java.util.Scanner;
 
-public class Solution_7568_µ¢Ä¡ {
+public class Solution_7568_ë©ì¹˜ {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -18,16 +18,16 @@ public class Solution_7568_µ¢Ä¡ {
 			int Rank = 1;
 			for (int j = 0; j < N; j++) {
 
-				// ÀÚ½ÅÀÇ °æ¿ì´Â ±×³É pass
+				// ìì‹ ì˜ ê²½ìš°ëŠ” ê·¸ëƒ¥ pass
 				if (i == j)
 					continue;
 
-				// D[i]°¡ D[j]º¸´Ù ÀÛÀ»¶§ rank´Â ÇÏ³ª Å°¿öÁØ´Ù! N¸¸Å­ µî¼ö°¡ ÀÖ±â¶§¹®ÀÌ´Ù!
+				// D[i]ê°€ D[j]ë³´ë‹¤ ì‘ì„ë•Œ rankëŠ” í•˜ë‚˜ í‚¤ì›Œì¤€ë‹¤! Në§Œí¼ ë“±ìˆ˜ê°€ ìˆê¸°ë•Œë¬¸ì´ë‹¤!
 				if (D[i][0] < D[j][0] && D[i][1] < D[j][1]) {
 					Rank++;
 				}
 			}
-			// ÇÏ³ª ´Ù ºñ±³ÇßÀ¸¸é Rank Ãâ·Â
+			// í•˜ë‚˜ ë‹¤ ë¹„êµí–ˆìœ¼ë©´ Rank ì¶œë ¥
 			System.out.print(Rank + " ");
 		}
 	}
