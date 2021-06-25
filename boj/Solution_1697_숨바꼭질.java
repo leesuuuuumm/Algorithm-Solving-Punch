@@ -31,7 +31,7 @@ public class Solution_1697_숨바꼭질 {
 	
 		que.offer(new Point(N,cnt));
 		v[N] = true;
-
+ 
 		while(!que.isEmpty()) {
 			Point cur = que.poll();
 			int nc = 0;
