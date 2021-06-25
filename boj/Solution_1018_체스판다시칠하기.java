@@ -21,7 +21,7 @@ public class Solution_1018_체스판다시칠하기 {
 		Scanner scan = new Scanner(System.in);
 		R = scan.nextInt();
 		C = scan.nextInt();
-
+ 
 		map = new char[R][C];
 		for (int r = 0; r < R; r++) {
 			String k = scan.next();
