@@ -3,7 +3,7 @@ package net.acmicpc;
 import java.util.Scanner;
 
 public class Solution_1018_체스판다시칠하기 {
-
+ 
 	static int R, C, wCnt, bCnt;
 	static char map[][];
 	static final char[][] chess1 = new char[][] { { 'W', 'B', 'W', 'B', 'W', 'B', 'W', 'B' },
