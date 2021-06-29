@@ -2,7 +2,7 @@ package com.boj;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+ 
 public class Solution_2667_단지번호붙이기 {
 	
 	static int dr[] = { -1, 1, 0, 0 }, dc[] = { 0, 0, -1, 1 };

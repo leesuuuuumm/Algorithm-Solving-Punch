@@ -1,7 +1,7 @@
 package net.acmicpc;
 
 import java.util.Scanner;
-
+ 
 public class Solution_1436_영화감독숌 {
 
 	public static void main(String[] args) {

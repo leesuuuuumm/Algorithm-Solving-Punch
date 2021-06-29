@@ -3,7 +3,7 @@ package net.acmicpc;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
+ 
 public class Solution_7569_토마토 {
 	static int R, C, H, Map[][][];
 	static int dh[] = { 0, 0, 0, 0, -1, 1 };

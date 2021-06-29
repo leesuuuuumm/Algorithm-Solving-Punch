@@ -30,3 +30,4 @@ public class Solution_2231_분해합 {
 		
 	}
 }
+ 

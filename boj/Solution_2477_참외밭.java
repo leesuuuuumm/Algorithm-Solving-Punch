@@ -1,7 +1,7 @@
 package ssafyAlgo;
 
 import java.util.Scanner;
-
+ 
 public class Solution_2477_참외밭{
 	public static void main(String[] args) {
 
