@@ -7,7 +7,7 @@ public class Solution_제일작은수제거하기 {
 		int arr[] = { 10 };
 		solution(arr);
 	}
-
+ 
 	public static LinkedList<Integer> solution(int[] arr) {
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		int min = Integer.MAX_VALUE;
