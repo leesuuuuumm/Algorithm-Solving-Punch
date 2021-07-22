@@ -26,7 +26,7 @@ public class Solution_제일작은수제거하기 {
 			if (list.isEmpty()) {
 				list.add(-1);
 			}
-
+ 
 		}
 		return list;
 
