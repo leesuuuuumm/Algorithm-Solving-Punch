@@ -1,56 +1,58 @@
-package ssafyAlgo;
+package net.acmicpc;
 
-import java.util.Scanner;
- 
-public class Solution_2477_참외밭{
-	public static void main(String[] args) {
+import java.io.*;
+import java.util.*;
 
-		Scanner scan = new Scanner(System.in);
-		int korean_melon_cnt = scan.nextInt();
-		int arr[][] = new int[6][2];
-		int min_12 = Integer.MAX_VALUE;
-		int max_12 = Integer.MIN_VALUE;
-		int min_34 = Integer.MAX_VALUE;
-		int max_34 = Integer.MIN_VALUE;
-		int max = Integer.MIN_VALUE;
-		int max2 = Integer.MAX_VALUE;
-		int area = 0;
-		for (int i = 0; i < 6; i++) {
-			for (int j = 0; j < 2; j++) {
-				arr[i][j] = scan.nextInt();
-
+public class Solution_2477_참외밭 {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int N = Integer.parseInt(st.nextToken());
+		int[][] melonField = new int[6][2];
+		int maxRow = Integer.MIN_VALUE;
+		int maxCol = Integer.MIN_VALUE;
+		int maxRowIdx = 0;
+		int maxColIdx = 0;
+		int sRow = 0;
+		int sCol = 0;
+		for(int i=0; i<6;i++) {
+			st = new StringTokenizer(br.readLine());
+			for(int j=0;j<2;j++) {
+				melonField[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
-//		for (int i = 0; i < 6; i++) {
-//			for (int j = 0; j < 2; j++) {
-//				System.out.println(arr[i][j]);
-//
-//			}
-//		}
-		for (int i = 0; i < 6; i++) {
-			for (int j = 0; j < 2; j++) {
-
-				if (arr[i][0] == 1 || arr[i][0] == 2) {
-					min_12 = Math.min(min_12, arr[i][1]);
-					max_12 = Math.max(max_12, arr[i][1]);
-					if (arr[i][1] == max_12) {
-						max2 = arr[i][0];
-					}
-				} else if (arr[i][0] == 3 || arr[i][0] == 4) {
-					min_34 = Math.min(min_34, arr[i][1]);
-					max_34 = Math.max(max_34, arr[i][1]);
-					if (arr[i][1] == max_34) {
-						max = arr[i][0];
-					}
-
+		for(int i=0;i<6;i++) {
+			if(melonField[i][0]==1|| melonField[i][0]==2) {
+				if(maxRow<melonField[i][1]) {
+					maxRow= melonField[i][1];
+					maxRowIdx = i;
+				}
+			}
+			if(melonField[i][0]==3||melonField[i][0]==4) {
+				if(maxCol<melonField[i][1]) {
+					maxCol= melonField[i][1];
+					maxColIdx = i;
 				}
 			}
 		}
-		if ((max == 4 && max2 == 2) || (max == 3 && max2 == 1)) {
-			area = (max_12 * max_34) - (min_12 * min_34);
-		} else if ((max == 3 && max2 == 2) || (max == 4 && max2 == 1)) {
-			area = (max_12 * max_34) - ((max_34 - min_34) * (max_12 - min_12));
+		
+		//작은 사각형 세로길이
+		if(maxRowIdx==0) {
+			sCol = Math.abs(melonField[5][1]-melonField[1][1]);
+		}else {
+		
+			sCol = Math.abs(melonField[(maxRowIdx-1)%6][1]-melonField[(maxRowIdx+1)%6][1]);
 		}
-		System.out.println(area * korean_melon_cnt);
+		
+		//작은 사각형 가로길이
+		if(maxColIdx ==0) {
+			sRow = Math.abs(melonField[5][1]-melonField[1][1]);
+		}else {
+		sRow = Math.abs(melonField[(maxColIdx-1)%6][1]-melonField[(maxColIdx+1)%6][1]);
+
+		}
+		int answer = ((maxRow*maxCol)-(sRow*sCol))*N;
+		System.out.println(answer);
 	}
+
 }
