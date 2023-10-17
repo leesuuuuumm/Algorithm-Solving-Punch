@@ -12,14 +12,19 @@
   <summary>1주차</summary>
   <div markdown="1">
 
-  ### 23.10.12 목요일
+  ### 23.10.17 화요일
   
   | 순번 | 문제    | 완료 |
   | :--: | :-----------:  | :-----:  |
-  | 00 | [백준 7490_0 만들기](https://www.acmicpc.net/problem/7490)  |  | 
-  | 01 | [백준 9935_문자열 폭발](https://www.acmicpc.net/problem/9935)  |  | 
+  | 00 | [백준 7490_0 만들기](https://www.acmicpc.net/problem/7490)  | ✔ | 
 
  
 
+  ### 23.10.18 금요일
+  
+  | 순번 | 문제    | 완료 |
+  | :--: | :-----------:  | :-----:  |
+  | 00 | [백준 9935_문자열 폭발](https://www.acmicpc.net/problem/9935)  |  | 
+ 
   </div>
   </details>
